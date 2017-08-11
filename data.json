@@ -1,0 +1,62 @@
+[{
+    "id": 1,
+    "name": "Ezekiel Elliot",
+    "team": "Cowboys",
+    "image": "http://upnupnews.com/wp-content/uploads/2016/11/9675568-ezekiel-elliott-nfl-dallas-cowboys-pittsburgh-steelers-850x560-2-300x300.jpg"
+},
+{
+
+    "id": 2,
+    "name": "Odell Beckham Jr.",
+    "team": "NY Giants",
+    "image": "https://www.docsports.com/images/lib/large/odell-beckham-jr-new-york-giants.jpg"
+
+},
+{
+    "id": 3,
+    "name": "Antonio Brown",
+    "team": "Steelers",
+    "image": "http://www.fantasyfootballchick.com/wp-content/uploads/2014/09/Antonio-Brown-540cc13f1a18e.image_-300x300.jpg"
+},
+{
+    "id": 4,
+    "name": "Richard Sherman",
+    "team": "Seahawks",
+    "image": "https://cornerofficefootball.files.wordpress.com/2014/09/richardsherman1.jpg?w=930"
+},
+{
+    "id": 5,
+    "name": "Vernon Hargreaves",
+    "team": "Buccaneers",
+    "image": "https://cdn-s3.si.com/s3fs-public/teams/football/nfl/players/748610-300x300.png"
+},
+{
+    "id": 6,
+    "name": "Dak Prescott",
+    "team": "Cowboys",
+    "image": "http://sportsoverserved.com/wp-content/uploads/2016/11/Redskins-Dak-300x300.jpg"
+},
+{
+    "id": 7,
+    "name": "Landon Collins",
+    "team": "NY Giants",
+    "image": "https://static1.squarespace.com/static/557082b6e4b002cc7a80e0b3/t/57d6d83b20099e32e85a3994/1473697861520/?format=300w"
+},
+{
+    "id": 8,
+    "name": "Leveon Bell",
+    "team": "Steelers",
+    "image": "http://www.post-gazette.com/image/2016/10/04/300x_a3-3_cCM_ca0,0,2593,1729/web-20161002pdSteelersSports15-12.jpg"
+},
+{
+    "id": 9,
+    "name": "Russel Wilson",
+    "team": "Seahawks",
+    "image": "https://www.docsports.com/images/lib/large/russell-wilson-seattle-seahawks.jpg"
+},
+{
+    "id": 10,
+    "name": "Jameis Winston",
+    "team": "Buccaneers",
+    "image": "https://www.docsports.com/images/lib/large/jameis-winston-tampa-bay-buccaneers.jpg"
+}]
