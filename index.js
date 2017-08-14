@@ -13,17 +13,17 @@ app.route("/api/list")
         });
     });
 
-app.route("/api/category/:className")
+app.route("/api/team/:team")
     .get(function(req, res){
         fs.readFile(jsonPath, 'utf-8', function(err, file) {
             if (err) {
                 res.statusStatus(500);
             } else {
-                var chunks = JSON.parse(fileContents);
-                var className = req.params.className;
+                var chunks = JSON.parse(file);
+                var team = req.params.team;
                 var response = chunks.filter(function(chunk) {
-                    if(chunk.className){
-                        if (chunk.className.toLowerCase().trim() === className.toLowerCase().trim()) {
+                    if(chunk.team){
+                        if (chunk.team.toLowerCase().trim() === team.toLowerCase().trim()) {
                             return chunk
                         }
                     }

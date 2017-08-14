@@ -5,11 +5,11 @@ app.config(['$routeProvider', function ($routeProvider) {
         .when('/', {
             templateUrl: '../views/home.html'
         })
-        .when('/api/list', {
+        .when('/list', {
             templateUrl: '../views/list.html'
-        }).when('/api/single/:id', {
+        }).when('/single/:id', {
             templateUrl: '../views/single.html'
-        }).when('/api/category/:className', {
+        }).when('/team/:team', {
             templateUrl: '../views/team.html'
         });
 
@@ -22,7 +22,7 @@ controlApp.controller('listReq', function($scope, $http, $location, $routeParams
     } 
     $http.get('/api/list')
     .then(function (response) {
-        $scope.toonList = response.data;
+        $scope.teamList = response.data;
     }); 
 });    
   
@@ -31,13 +31,13 @@ controlApp.controller("singleController", function($scope, $routeParams, $http, 
     var myId = $routeParams.id;    
     $http.get("/api/single/" + myId)
        .then(function (response) {
-            $scope.singleToon = response.data;
+            $scope.singleTeam = response.data;
     });
 }); 
 
     
 controlApp.controller("singleCategory", function($scope, $http, $routeParams, $location){ 
-    $http.get('/api/category/' + $routeParams.className)
+    $http.get('/api/team/' + $routeParams.team)
        .then(function (response) {
             $scope.oneCategory = response.data;
             console.log($scope.oneCategory)
