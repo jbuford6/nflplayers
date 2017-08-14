@@ -33,7 +33,7 @@ controlApp.controller("singleController", function($scope, $routeParams, $http, 
 }); 
 
     
-controlApp.controller("singleCategory", function($scope, $http, $routeParams, $location){ 
+controlApp.controller("singleTeam", function($scope, $http, $routeParams, $location){ 
     $http.get('/api/team/' + $routeParams.team)
        .then(function (response) {
             $scope.team = response.data;
