@@ -1,9 +1,9 @@
 <div ng-controller="singleTeam">
-    <div ng-repeat="team in oneteam" >
+    <div ng-repeat="teams in team" >
         <div class="individual">
-            <p> {{ team.name }} </p>
-            <p> {{ team.team }} </p>
-            <img ng-src="{{ team.image }}" alt="NFL Players" />
+            <p> {{ teams.name }} </p>
+            <p> {{ teams.team }} </p>
+            <img ng-src="{{ teams.image }}" alt="NFL Players" />
         </div>
     </div>
 </div>
