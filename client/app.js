@@ -3,9 +3,6 @@ var app = angular.module('myApp', ['ngRoute', 'controllers']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '../views/home.html'
-        })
-        .when('/list', {
             templateUrl: '../views/list.html'
         }).when('/single/:id', {
             templateUrl: '../views/single.html'
@@ -39,7 +36,7 @@ controlApp.controller("singleController", function($scope, $routeParams, $http, 
 controlApp.controller("singleCategory", function($scope, $http, $routeParams, $location){ 
     $http.get('/api/team/' + $routeParams.team)
        .then(function (response) {
-            $scope.oneCategory = response.data;
-            console.log($scope.oneCategory)
+            $scope.team = response.data;
+            console.log($scope.team)
         });  
 });
